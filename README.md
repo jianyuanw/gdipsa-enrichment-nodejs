@@ -1,2 +1,2 @@
-# Enrichment Module of GDipSA Programme
+# GDipSA Enrichment
 Code labs and exercises for the module
