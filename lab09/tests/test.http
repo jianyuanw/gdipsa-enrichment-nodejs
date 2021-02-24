@@ -1,0 +1,21 @@
+### Registration
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "email": "markgmail.com",
+  "password": "mark1234"
+}
+
+### Login
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+  "email": "markgmail.com",
+  "password": "mark1234"
+}
+
+### Get user own profile
+GET http://localhost:3000/users/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDM2MWM5MmQxMzE5NDNiYjQ5ZWMzN2EiLCJlbWFpbCI6Im1hcmtAZ21haWwuY29tIiwicm9sZXMiOlsidXNlciJdLCJpYXQiOjE2MTQxNTkwMDYsImV4cCI6MTYxNDc2MzgwNn0.DQHV0ig3ENmUFNGQMbHA4kg5heBa4cZZXF0E8sR5hII
