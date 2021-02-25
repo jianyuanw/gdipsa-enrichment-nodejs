@@ -1,0 +1,7 @@
+.num-thumb {
+  width: 15vw;
+  height: auto;
+  padding: 5px;
+  border: 2px lightgrey solid;
+  border-radius: 8px;
+}
