@@ -1,0 +1,12 @@
+.fruit-thumb {
+  width: 80px;
+  opacity: 0.4;
+  transition-property: opacity;
+  transition-timing-function: linear;
+  transition-duration: 100ms;
+}
+
+.fruit-thumb:hover {
+  opacity: 1;
+  cursor: pointer;
+}

@@ -1,0 +1,18 @@
+<div class="container-fluid p-3">
+  <div class="d-flex justify-content-center">
+    <img src="assets/kwik-e-mart.png" />
+  </div>
+
+  <div class="container-fluid rounded py-2 mt-4" id="fruits">
+    <h4>List of Fruits</h4>
+    <div class="d-flex flex-wrap">
+      <app-fruits
+        *ngFor="let fn of fruitFileNames"
+        [fileName]="fn"
+        (addItemEvent)="addToCart($event)"
+      ></app-fruits>
+    </div>
+  </div>
+
+  <app-cart [cart]="cart"></app-cart>
+</div>
