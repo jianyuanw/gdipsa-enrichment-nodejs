@@ -1,0 +1,20 @@
+{
+  "name": "heroku-example",
+  "version": "1.0.0",
+  "description": "Fortune REST API",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "engines": {
+    "node": "14.15.5"
+  }
+}
