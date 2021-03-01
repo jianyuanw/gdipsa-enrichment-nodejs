@@ -1,0 +1,7 @@
+<div class="row" *ngIf="imageOfTheDay">
+  <div class="col">
+    <img [src]="imageOfTheDay.url" class="img-fluid img-thumbnail" />
+    <h2 class="my-3">{{ imageOfTheDay.title }}</h2>
+    <p>{{ imageOfTheDay.explanation }}</p>
+  </div>
+</div>

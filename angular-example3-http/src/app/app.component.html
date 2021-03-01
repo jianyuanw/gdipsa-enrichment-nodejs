@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <div class="row my-3">
+    <div class="col d-flex align-items-center">
+      <img
+        src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg"
+      />
+      <h3 class="font-weight-bold m-0">Image of the Day</h3>
+    </div>
+  </div>
+
+  <app-api-key (apiKey)="getApiKey($event)"></app-api-key>
+
+  <app-display [imageOfTheDay]="imageOfTheDay"></app-display>
+
+  <div class="row" *ngIf="canShare">
+    <div class="col d-flex justify-content-end">
+      <i class="fas fa-share-alt fa-lg" (click)="shareIt()"></i>
+    </div>
+  </div>
+</div>
