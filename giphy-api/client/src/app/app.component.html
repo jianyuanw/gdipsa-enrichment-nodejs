@@ -1,0 +1,43 @@
+<div class="container-fluid px-4">
+  <div class="row my-4">
+    <div class="col d-flex align-items-center">
+      <img src="assets/giphy-logo.png" style="width: 80px" />
+      <h3 class="d-inline ml-3">Generate some GIFs using Giphy's API</h3>
+    </div>
+  </div>
+
+  <form [formGroup]="form">
+    <div class="row">
+      <div class="col">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter a search term"
+            formControlName="search"
+          />
+          <div class="input-group-append">
+            <button
+              class="btn btn-primary"
+              type="button"
+              [disabled]="form.invalid"
+              (click)="generateGifs()"
+            >
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <div class="row my-4" *ngIf="imgSrcs">
+    <div class="col">
+      <h4>Results for "{{ searchTerm }}":</h4>
+    </div>
+  </div>
+
+  <div class="row d-flex flex-wrap mx-0" *ngIf="imgSrcs">
+    <img *ngFor="let imgSrc of imgSrcs" src="{{ imgSrc }}" class="m-1" />
+  </div>
+</div>
