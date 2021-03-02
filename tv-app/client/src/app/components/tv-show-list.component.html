@@ -1,0 +1,5 @@
+<h2>List of TV shows belonging to {{ genre | titlecase }} genre</h2>
+
+<div *ngFor="let tvShow of tvShowSummary" (click)="getDetails(tvShow.tvid)">
+  {{ tvShow.name }}
+</div>

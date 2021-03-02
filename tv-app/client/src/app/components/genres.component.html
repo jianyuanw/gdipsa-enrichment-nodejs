@@ -1,0 +1,5 @@
+<h2>List of Genres</h2>
+
+<div *ngFor="let genre of genres" [routerLink]="['/genre', genre]">
+  {{ genre | titlecase }}
+</div>

@@ -1,0 +1,10 @@
+<img src="{{ tvDetails?.image }}" />
+<h2>{{ tvDetails?.name }}</h2>
+
+<ul>
+  <li>Language: {{ tvDetails?.lang }}</li>
+  <li>Official Site: {{ tvDetails?.official_site }}</li>
+  <li>Rating: {{ tvDetails?.rating }}</li>
+</ul>
+
+<span [innerHTML]="tvDetails?.summary"></span>
